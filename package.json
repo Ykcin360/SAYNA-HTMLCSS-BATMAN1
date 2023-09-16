@@ -1,0 +1,15 @@
+{
+  "name": "sayna-htmlcss-batman1",
+  "version": "1.0.0",
+  "description": "Voici la première partie du projet fil rouge BATMAN (Formation SAYNA ODC5 JS)",
+  "main": "index.js",
+  "scripts": {
+    "compile": "sass css/main.scss css/main.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.67.0"
+  }
+}
