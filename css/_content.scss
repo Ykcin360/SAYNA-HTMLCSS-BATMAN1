@@ -13,8 +13,18 @@ header > div{
   justify-content: space-between;
 }
 
+header #logo {
+  margin-left: 5rem;
+  width: 121px;
+  height: 41px;
+  background-image: url('../assets/Logos/logohome.png');
+  background-size: cover;
+  transition: filter 0.3s; 
+}
+
 header nav h1 {
   text-transform: uppercase;
+  margin-right: 5rem;
 }
 
 header #hero {
@@ -28,9 +38,7 @@ header #hero {
 }
 
 header #hero > div {
-  // background-color: red;
-
-  max-width: 35vw;
+  max-width: 40vw;
   padding-bottom: 35vh;
 
   display: flex;
@@ -40,12 +48,76 @@ header #hero > div {
 
 header #hero > div > p {
   text-align: center;
-  font-size: 22px;
+  font-size: 18px;
   margin: 1.5rem;
 }
 
 header #hero > div > span{
   font-weight: bolder;
-  font-size: 24px;
+  font-size: 22px;
   margin-bottom: 1.5rem;
+}
+
+header #hero .buttons{
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+
+header #hero .buttons > :nth-child(1) {
+  text-decoration: none;
+  background-image: $button-gradient-2-40;
+  width: 10rem;
+  padding: 1rem 2rem;
+  font-family: $rajdhani;
+}
+
+header #hero .buttons > :nth-child(2) {
+  text-decoration: none;
+  background-image: $button-gradient-2-40;
+  width: 10rem;
+  padding: 1rem 2rem;
+  font-family: $rajdhani;
+}
+
+header #hero .buttons > :nth-child(1):hover, header #hero .buttons > :nth-child(2):hover {
+  background-image: $button-gradient-2-100;
+}
+
+header #hero .next{
+  width: 74px;
+  height: 43px;
+  background-image: url(../assets/Logos/flèche_down_header.png);
+  position: absolute;
+  top: 90vh;
+}
+
+//------------------------------------------------------------------------------------------
+
+main #cine{
+  border-left: solid 2px $body-line;
+  border-right: solid 2px $body-line;
+
+  // --------------------------
+  padding: 5rem 5rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+main #cine p {
+  text-align: justify;
+}
+
+main #cine .galerie{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
