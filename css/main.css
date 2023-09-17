@@ -1,18 +1,89 @@
-/* Error: Expected expression.
- *    ,
- * 15 | $rajdhani:;
- *    |           ^
- *    '
- *   css\_variables.scss 15:11  @import
- *   css\main.scss 4:9          root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Expected expression.\a    \2577 \a 15 \2502  $rajdhani:;\d\a    \2502            ^\a    \2575 \a   css\\_variables.scss 15:11  @import\a   css\\main.scss 4:9          root stylesheet";
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap");
+* {
+  scroll-behavior: smooth;
+  margin: 0;
+  font-family: "Space Grotesk", sans-serif;
+  color: #ffffff;
 }
+
+body {
+  background: #0D0E09;
+  font-size: 18px;
+}
+
+.container {
+  max-width: 1200px;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 36px;
+}
+
+.sous-titre {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 22px;
+}
+
+h2 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 12px;
+}
+
+p {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 18px;
+}
+
+header {
+  background-image: url(../assets/Illustrations/Bathome1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header > div {
+  border: solid 2px #BCBBBD;
+  height: 132px;
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav h1 {
+  text-transform: uppercase;
+}
+
+header #hero {
+  border-left: solid 2px #BCBBBD;
+  border-right: solid 2px #BCBBBD;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header #hero > div {
+  max-width: 35vw;
+  padding-bottom: 35vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header #hero > div > p {
+  text-align: center;
+  font-size: 22px;
+  margin: 1.5rem;
+}
+
+header #hero > div > span {
+  font-weight: bolder;
+  font-size: 24px;
+  margin-bottom: 1.5rem;
+}
+
+/*# sourceMappingURL=main.css.map */
