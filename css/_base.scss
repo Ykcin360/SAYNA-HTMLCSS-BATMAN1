@@ -13,6 +13,8 @@
 body{
   background: $secondary-background-color;
   font-size: 18px;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .container{
@@ -32,7 +34,7 @@ h1{
 
 h2{
   font-family: $space-grotesk;
-  font-size: 12px;
+  font-size: 18px;
 }
 
 p{
