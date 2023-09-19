@@ -423,7 +423,7 @@ main #contact > div{
 
 main #contact > div .form {
   margin: 0 auto;
-  width: 65%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   row-gap: 2rem;
@@ -441,7 +441,7 @@ main #contact .form label {
   margin: 1rem 0;
 }
 
-main #contact .form .input-data input, main #contact .form .input-data textarea {
+main #contact .form .input-data input, main #contact .form .news, main #contact .form .input-data textarea {
   background-color: transparent;
   width: 100%;
   height: 1.5rem;
@@ -458,6 +458,11 @@ main #contact .form .newsletter {
   margin: 1rem 0;
 }
 
+main #contact .form .newsletter p {
+  margin-top: 1.5rem;
+  font-size: 14px;
+}
+
 main #contact .form .newsletter input {
   width: 15px;
   height: 15px;
@@ -468,10 +473,58 @@ main #contact .form select {
   background: none;
   border: none;
   border-bottom: 2px solid $secondary-font-color;
-  margin: 1rem 0;
+  margin-bottom: 2rem;
 }
 
 main #contact .form select option {
   background-color: $body-line;
+  color: $secondary-background-color;
+}
+
+main #contact .form .news-btn{
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main #contact .form .news-btn a {
+  text-decoration: none;
+  border: 2px solid $body-line;
+  padding: 0.5rem 1.5rem;
+  font-size: 12px;
+  transition: background 0.3s;
+}
+main #contact .form .news-btn a:hover {
+  background: $button-gradient-1-100;
+}
+
+main #contact .form .news {
+  font-size: 14px;
+}
+
+main #contact .form .message{
+  margin-top: 3rem !important;
+}
+
+main #contact .form .confirm {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+main #contact .form .confirm-btn {
+  border: none;
+  text-decoration: none;
+  background-image: $button-gradient-2-100;
+  width: 10rem;
+  padding: 1rem 1.5rem;
+  font-family: $rajdhani;
+}
+
+main #contact .form .confirm-btn:hover {
+  background-image: $button-gradient-1-100;
   color: $secondary-background-color;
 }
