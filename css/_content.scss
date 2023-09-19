@@ -347,37 +347,37 @@ main #multimedia > div .banner {
   display: flex;
   background: $button-gradient-1-100;
   border-radius: 0 10px 10px 0;
-  height: 30vh;
+  height: 28vh;
   overflow-y: hidden;
 }
 
 main #multimedia > div .banner-pic{
-  width: 35%;
+  width: 30%;
   background-image: url(../assets/Illustrations/Bathome_ba1.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 main #multimedia > div .banner-content{
-  width: 65%;
+  width: 70%;
   overflow-y: auto;
   padding: 1rem 1rem;
 }
 
 main #multimedia > div .banner-content .genre{
-  font-size: 12px;
+  font-size: 10px;
   text-transform: uppercase;
   margin-bottom: 0.5rem;
 }
 
 main #multimedia > div .banner-content .title{
-  font-size: 18px;
+  font-size: 16px;
   font-family: $rajdhani;
   margin-bottom: 0.5rem;
 }
 
 main #multimedia > div .banner-content .imdb{
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 0.5rem;
 }
 
@@ -386,5 +386,92 @@ main #multimedia > div .banner-content .imdb span {
 }
 
 main #multimedia > div .banner-content .desc{
-  font-size: 12px;
+  font-size: 10px;
+}
+
+main #multimedia .trailer{
+  width: 90%;
+  margin: 0 auto;
+  min-height: 50vh;
+  background-color: red;
+}
+
+main #multimedia .trailer iframe {
+  width: 100%;
+  height: 100%;
+}
+
+//--------------------------------------- CONTACT ---------------------------------------------
+
+main #contact{
+  border-left: solid 2px $body-line;
+  border-right: solid 2px $body-line;
+
+  // --------------------------
+  padding: 5rem 5rem;
+}
+
+main #contact > div{
+  background: $button-gradient-1-100;
+
+  min-width: 100vw;
+  margin: 0 auto;
+  padding: 5rem 0;
+  position: absolute;
+  left: 0;
+}
+
+main #contact > div .form {
+  margin: 0 auto;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+main #contact h1{
+  text-transform: uppercase;
+  align-self: center;
+  margin-bottom: 3rem;
+}
+
+main #contact .form label {
+  display: block;
+  text-transform: uppercase;
+  margin: 1rem 0;
+}
+
+main #contact .form .input-data input, main #contact .form .input-data textarea {
+  background-color: transparent;
+  width: 100%;
+  height: 1.5rem;
+  padding-left: 0.2rem;
+  border: none;
+  border-bottom: 2px solid $secondary-font-color;
+}
+
+main #contact .form .email input{
+  margin-bottom: 2rem;
+}
+
+main #contact .form .newsletter {
+  margin: 1rem 0;
+}
+
+main #contact .form .newsletter input {
+  width: 15px;
+  height: 15px;
+}
+
+main #contact .form select {
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 2px solid $secondary-font-color;
+  margin: 1rem 0;
+}
+
+main #contact .form select option {
+  background-color: $body-line;
+  color: $secondary-background-color;
 }
